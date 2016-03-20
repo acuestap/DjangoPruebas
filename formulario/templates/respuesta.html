@@ -1,14 +1,26 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Landing Page - Francis</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/formulario.css' %}">
 
 </head>
 <body>
-    <p>
-        Muchas gracias.</br>
-        Nos pondremos en contacto contigo.
-    </p>
+    <div class="page-header">
+        <h1>Formulario</h1>
+    </div>
+    <div class="container">
+        <div id="dRespuesta" class="col-md-12 center-block text-center">
+            Muchas gracias.</br>
+            Nos pondremos en contacto contigo.</br></br>
+            <a href="/formulario/" class="btn btn-default">Regresar</a>
+        </div>
 
+    </div>
 </body>
 </html>

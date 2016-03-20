@@ -14,6 +14,7 @@ def new_francis_form(request):
             template = loader.get_template('respuesta.html')
             context = { }
             return HttpResponse(template.render(context, request))
+            #return HttpResponseRedirect("/respuesta/")
     else:
         form = FrancisForm()
 
@@ -23,4 +24,8 @@ def new_francis_form(request):
     }
     return HttpResponse(template.render(context, request))
 
+def respuesta_form(request):
+    template = loader.get_template('respuesta.html')
+    context = { }
+    return HttpResponse(template.render(context, request))
 
